@@ -1,0 +1,101 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main() {
+    string message;
+    string morse;
+
+    cout << "Enter a message: ";
+    getline(cin, message);
+
+    for (int i = 0; i < message.length(); i++) {
+        char letter = toupper(message[i]);
+
+        if (letter == 'A') {
+            morse = ".-";
+        }
+        else if (letter == 'B') {
+            morse = "-...";
+        }
+        else if (letter == 'C') {
+            morse = "-.-.";
+        }
+        else if (letter == 'D') {
+            morse = "-..";
+        }
+        else if (letter == 'E') {
+            morse = ".";
+        }
+        else if (letter == 'F') {
+            morse = "..-.";
+        }
+        else if (letter == 'G') {
+            morse = "--.";
+        }
+        else if (letter == 'H') {
+            morse = "....";
+        }
+        else if (letter == 'I') {
+            morse = "..";
+        }
+        else if (letter == 'J') {
+            morse = ".---";
+        }
+        else if (letter == 'K') {
+            morse = "-.-";
+        }
+        else if (letter == 'L') {
+            morse = ".-..";
+        }
+        else if (letter == 'M') {
+            morse = "--";
+        }
+        else if (letter == 'N') {
+            morse = "-.";
+        }
+        else if (letter == 'O') {
+            morse = "---";
+        }
+        else if (letter == 'P') {
+            morse = ".--.";
+        }
+        else if (letter == 'Q') {
+            morse = "--.-";
+        }
+        else if (letter == 'R') {
+            morse = ".-.";
+        }
+        else if (letter == 'S') {
+            morse = "...";
+        }
+        else if (letter == 'T') {
+            morse = "-";
+        }
+        else if (letter == 'U') {
+            morse = "..-";
+        }
+        else if (letter == 'V') {
+            morse = "...-";
+        }
+        else if (letter == 'W') {
+            morse = ".--";
+        }
+        else if (letter == 'X') {
+            morse = "-..-";
+        }
+        else if (letter == 'Y') {
+            morse = "-.--";
+        }
+        else if (letter == 'Z') {
+            morse = "--..";
+        }
+        else if (letter == ' ') {
+            morse = " ";
+        }
+
+        cout << letter << ": " << morse << endl;
+    }
+
+    return 0;
+}
